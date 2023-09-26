@@ -20,10 +20,10 @@ $data = json_decode(file_get_contents('onepageadmin.json'),true);
 
 <form method="POST">
   <label for="text1">Текст1</label>
-  <input type="text" id="text1" name="text1" value="<?=$data['text1']?>"><br><br>
+  <input type="text" name="text1" value="<?=$data['text1']?>"><br><br>
   <label for="text2">Текст2</label>
-  <input type="text" id="text2" name="text2" value="<?=$data['text2']?>"><br><br>
-  <input type="checkbox" id="checkbox1" name="checkbox1" value="1" <?if(!empty($data['checkbox1'])){echo 'checked';}?>>
+  <input type="text" name="text2" value="<?=$data['text2']?>"><br><br>
+  <input type="checkbox" name="checkbox1" value="1" <?if(!empty($data['checkbox1'])){echo 'checked';}?>>
   <label for="checkbox1">Галочка</label><br>  
   <button type="submit" class="">Отправить</button>
 </form>
